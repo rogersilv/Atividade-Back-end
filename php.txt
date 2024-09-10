@@ -1,0 +1,23 @@
+<?php
+// As variáveis para as três notas
+$nota1 = 8;
+$nota2 = 6;
+$nota3 = 7;
+
+// Calculo da média das três notas
+$media = ($nota1 + $nota2 + $nota3) / 3;
+
+// Verificando se o aluno foi aprovado ou reprovado
+if ($media > 7) {
+    $status = "Aprovado";
+} else {
+    $status = "Reprovado";
+}
+
+// Resultado
+echo "Nota 1: $nota1 \n";
+echo "Nota 2: $nota2 \n";
+echo "Nota 3: $nota3 \n";
+echo "Média: " . number_format($media, 2) . "\n";
+echo "Situação: $status\n";
+?>
